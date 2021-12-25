@@ -1,0 +1,5 @@
+<div class="grid-container" *ngIf="lists">
+    <ng-container *ngFor="let list of lists; let i = index">
+        <follower-card [follower]="list" [index]="i" (unfollowEvent)="handleUnfollow($event)"></follower-card>
+    </ng-container>
+</div>

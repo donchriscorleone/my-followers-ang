@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1e3d59;
+    height: 80px;
+    padding-top: 30px;
+    gap: 40px;
+
+    a {
+        color: #e5e5dc;
+        text-decoration: none;
+        font-size: 1.2rem;
+
+        &:hover {
+            color: #c4a35a;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="header">
+        <h1>{{follower.login}}</h1>
+        <img [attr.src]="follower.avatar_url" [attr.alt]="follower.login">
+    </div>
+    <div class="card-body">
+        <h2>{{follower.login}}'s URLs</h2>
+        <ul>
+            <li><a [attr.href]="follower.html_url" target="_blank">Main</a></li>
+            <li><a [attr.href]="follower.repos_url" target="_blank">Repos</a></li>
+        </ul>
+    </div>
+    <div class="card-actions">
+        <button (click)="unfollow()">Unfollow</button>
+    </div>
+</div>
