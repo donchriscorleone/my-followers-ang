@@ -10,7 +10,7 @@ export class ListOfFollowersComponent implements OnInit {
   lists!: Follower[];
 
   constructor(private followerService: FollowersService) { 
-    this.followerService.getFollowers().subscribe(fs => this.lists = fs);
+    this.followerService.getFollowers().subscribe(fs => this.lists = fs, err => this.lists = []);
   }
 
   ngOnInit(): void {
